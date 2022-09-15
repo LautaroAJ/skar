@@ -15,18 +15,13 @@ body {
 
 
 .header{
-    background-color: blue;
     grid-area: header;
     display: grid;
     flex-direction: column;
 }
 
 .grid .header{
-    display: grid;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #1976D2;
+    background: linear-gradient(to right, blue, aqua);
 }
 
 .grid .header .img-banner img{
@@ -96,7 +91,8 @@ body {
 .main .article .muestra img{
     width: auto;
     height: 135px;
-    padding: 5px 5px 5px 5px
+    padding: 5px 5px 5px 5px;
+    transform: translate(-10px, -15px);
 }
 
 .dibujos{
@@ -324,6 +320,13 @@ body {
     .dibujos .mini .trabajos img{
         width: 20rem;
         height: 20rem;
+        padding: 10px;
+        transition: height 2s, width 1s;
+    }
+
+    .dibujos .mini .trabajos img:hover{
+        width: 22rem;
+        height: 22rem;
         padding: 10px;
     }
     
